@@ -1,0 +1,1 @@
+Session creation failed: cannot access local variable 'firefox_options' where it is not associated with a value

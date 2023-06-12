@@ -1,0 +1,31 @@
+1. Download Python
+2. Selenium
+   ~ pip install selenium
+3. WebDrivers
+   ~ Chrome Driver
+   ~ Firefox Driver (GeckoDriver)
+4. Pycharm studio download
+5. pytest framework
+   ~ pip install pytest
+   ~ pip install --upgrade pytest
+6. Fixture & Conftest.py
+   ~ Conftest.py to store the fixture & html report modifications & Browsers initialization
+7. Pytest Html Report
+   ~ pip install pytest-html (to download the package) , –html=report.html (to download the report)
+   ~ pytest .\src\PageObjectModel\Tests\LoginPage_test.py -v --html=./gmail.html - To run you test cases with HTML report
+8. To parallel testing
+   ~ pip install pytest-xdist
+9. To install web driver manager
+   ~ pip install webdriver_manager
+10. To upgrade PIP
+   ~ python.exe -m pip install --upgrade pip
+11. To install allure report
+   ~ pip install allure-pytest
+12. To uninstall allure report
+   ~ pip uninstall allure-pytest
+13. To upgrade allure report
+   ~ pip install --upgrade allure-pytest
+14. To generate allure report with your test case - Parallel execution
+   ~ pytest -n auto --alluredir=allure-results\
+15. To check the allure report
+   ~ allure serve allure-results

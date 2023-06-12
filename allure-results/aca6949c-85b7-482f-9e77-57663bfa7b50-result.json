@@ -1,0 +1,1 @@
+{"name": "test_gmail_logo[chrome]", "status": "skipped", "parameters": [{"name": "initialization_driver", "value": "'chrome'"}], "start": 1686268681990, "stop": 1686268681990, "uuid": "32e95aa0-bab0-4b42-8e6f-37cade4057be", "testCaseId": "aeb576fb028486ee51ebd07ff8419afb", "fullName": "src.PageObjectModel.Tests.ComposeEmail_test.Test_ComposeEmail#test_gmail_logo"}

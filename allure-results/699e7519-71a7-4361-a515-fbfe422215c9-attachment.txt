@@ -1,0 +1,3 @@
+Session creation failed: name 'firefox_options' is not defined
+Session creation failed: name 'firefox_options' is not defined
+Session creation failed: name 'firefox_options' is not defined
