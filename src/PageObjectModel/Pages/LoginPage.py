@@ -17,7 +17,7 @@ class LoginPage(CommonPage):
         super().__init__(driver)
         driver.maximize_window()
         driver.delete_all_cookies()
-        time.sleep()
+        time.sleep(5)
         self.driver.get(TestData.BASE_URL)
 
     def login_Gmail(self, email, password):

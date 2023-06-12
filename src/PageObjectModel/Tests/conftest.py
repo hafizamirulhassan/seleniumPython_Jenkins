@@ -14,16 +14,16 @@ def initialization_driver(request):
     browser = request.param
 
     if browser == "chrome":
-        # chrome_options = Options()
-        # # chrome_options.add_argument("--headless")
-        # service = Service(TestData.CHROME_EXECUTABLE_PATH)
-        # web_driver = webdriver.Chrome(service=service, options=chrome_options)
+        chrome_options = Options()
+        # chrome_options.add_argument("--headless")
+        service = Service(TestData.CHROME_EXECUTABLE_PATH)
+        web_driver = webdriver.Chrome(service=service, options=chrome_options)
 
-        options = webdriver.ChromeOptions()
-        web_driver = webdriver.Remote(
-            command_executor="http://192.168.10.3:4444/wd/hub",
-            options=options
-        )
+        # options = webdriver.ChromeOptions()
+        # web_driver = webdriver.Remote(
+        #     command_executor="http://192.168.10.3:4444/wd/hub",
+        #     options=options
+        # )
 
     # if browser == "firefox":
     #     # firefox_options = webdriver.FirefoxOptions()
@@ -38,16 +38,16 @@ def initialization_driver(request):
     #     )
 
     if browser == "edge":
-        # edge_options = webdriver.EdgeOptions()
-        # # firefox_options.add_argument("--headless")
-        # service = Service(TestData.EDGE_EXECUTABLE_PATH)
-        # web_driver = webdriver.Edge(service=service, options=edge_options)
+        edge_options = webdriver.EdgeOptions()
+        # firefox_options.add_argument("--headless")
+        service = Service(TestData.EDGE_EXECUTABLE_PATH)
+        web_driver = webdriver.Edge(service=service, options=edge_options)
 
-        options = EdgeOptions()
-        driver = webdriver.Remote(
-            command_executor="http://192.168.10.3:4444/wd/hub",
-            options=options
-        )
+        # options = EdgeOptions()
+        # driver = webdriver.Remote(
+        #     command_executor="http://192.168.10.3:4444/wd/hub",
+        #     options=options
+        # )
 
     request.cls.driver = web_driver
     web_driver.implicitly_wait(20)
