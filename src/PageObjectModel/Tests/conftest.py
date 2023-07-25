@@ -8,7 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from src.PageObjectModel.Config.config import TestData
 
 
-@pytest.fixture(params=["chrome", "edge"], scope='class')
+@pytest.fixture(params=["chrome"], scope='class')
 def initialization_driver(request):
     global web_driver
     browser = request.param
@@ -36,18 +36,6 @@ def initialization_driver(request):
     #         command_executor="http://192.168.10.3:4444/wd/hub",
     #         options=options
     #     )
-
-    if browser == "edge":
-        edge_options = webdriver.EdgeOptions()
-        # firefox_options.add_argument("--headless")
-        service = Service(TestData.EDGE_EXECUTABLE_PATH)
-        web_driver = webdriver.Edge(service=service, options=edge_options)
-
-        # options = EdgeOptions()
-        # driver = webdriver.Remote(
-        #     command_executor="http://192.168.10.3:4444/wd/hub",
-        #     options=options
-        # )
 
     request.cls.driver = web_driver
     web_driver.implicitly_wait(20)

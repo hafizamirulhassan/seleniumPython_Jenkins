@@ -21,6 +21,7 @@
    ~ python.exe -m pip install --upgrade pip
 11. To install allure report
    ~ pip install allure-pytest
+   ~ Download allure and set the path environment variable i.e. C:\Users\HP\Downloads\allure-2.22.0\allure-2.22.0\bin
 12. To uninstall allure report
    ~ pip uninstall allure-pytest
 13. To upgrade allure report
